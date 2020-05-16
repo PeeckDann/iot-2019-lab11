@@ -13,12 +13,8 @@ class SeafoodManager:
     def find_seafood(self, species, product_condition):
         """
         Testing search method
-        >>> print(len(seafood_manager.find_seafood("tuna", ProductCondition(2))))
-        2
-        >>> print(seafood_manager.find_seafood("tuna", ProductCondition(2))[0].price_in_uah)
-        10
-        >>> print(seafood_manager.find_seafood("tuna", ProductCondition(2))[1].price_in_uah)
-        20
+        >>> seafood_manager.find_seafood("tuna", ProductCondition(2))
+        [(Price: 10, Species: tuna), (Price: 20, Species: tuna)]
         """
         result_list = []
         for seafood in self.seafood_list:
