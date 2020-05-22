@@ -10,4 +10,7 @@ class Fish(AbstractSeafood):
         self.product_category = product_category
 
     def __str__(self):
-        return "{}; {}; {}.".format(self.price_in_uah, self.product_species, self.product_condition)
+        return super().__str__()
+
+    def __repr__(self):
+        return super().__repr__()
